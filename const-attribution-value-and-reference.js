@@ -6,9 +6,9 @@ var b = a;
 
 a = 5; // change a value but variable b keeps the same value
 
-console.log('a', a);
+console.log('a', a); // console.log(5);
 
-console.log('b', b);
+console.log('b', b); // console.log(10)
 
 // using var for reference
 
@@ -17,10 +17,10 @@ var product = {
 }
 
 product.name = 'macbook';
+console.log(product); // macbook
 
 product = {};
-
-console.log(product);
+console.log(product); // {}
 
 // using const it happens the same thing
 
@@ -28,7 +28,8 @@ const product1 = {
 	name: 'imac'
 }
 
-product1.name = 'mac air';
+product1.name = 'macbook'; 
+console.log(product1) // macbook
 
 // but if you change the reference that const is appointed gets a error
 product1 = {};
