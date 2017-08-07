@@ -1,19 +1,9 @@
 (function() {
-  const $button = document.querySelector('[data-js="button"]');
-  
-  const sandwich = {
-    bread: 'white',
-    cheese: 'cheedar',
+ const country = ['island', 'japan','russia', 'german'];
 
-    prepare: function() {
-      return `I want a sandwich with ${this.bread} bread and ${this.cheese}`;
-    },
+ const likeCountry = country
+ .filter(name => name === 'german')
+ .map(name => `i like ${name}!`)
 
-    make: function(){
-      window.setTimeout(() =>{
-        console.log(this.prepare());
-      },500);
-    }
-  }
-  $button.addEventListener('click', function(){ sandwich.make() });
+ console.log(likeCountry);
 })();
