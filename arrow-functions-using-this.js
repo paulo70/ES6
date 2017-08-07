@@ -5,7 +5,7 @@
     bread: 'white',
     cheese: 'cheedar',
 
-    prepare: function() {
+    prepare: function(){
       return `I want a sandwich with ${this.bread} bread and ${this.cheese}`;
     },
 
