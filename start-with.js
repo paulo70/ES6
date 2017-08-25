@@ -1,22 +1,20 @@
-const text = 'lorem ipsum dorem dorem borem gurti'
+const name = 'paulo'
 
- // Using startsWith
- console.log(text.startsWith('lorem')) //true//
+console.log(Array.from(name)) //[ 'p', 'a', 'u', 'l', 'o' ]//
 
- console.log(text.startsWith('gu',30)) //true//
+const $list = document.querySelectorAll('[data-js="list"]')
 
-// Using endsWith
+//Using old method//
+const arr = Array.prototype.map.call($list, (list) =>{
+	return list.textContent
+})
 
-console.log(text.endsWith('gur',33)) //true//
-console.log(text.endsWith('ti')) //true//
+console.log(arr)//["Monet" ,"Basquiat", "Picasso", "Modigliani"]//
 
-//Using includes//
+//Using Arrayfrom//
 
-console.log(text.includes('borem')) //true//
-console.log(text.includes('ipsum'))//true//
-console.log(text.includes('ip'))//true//
-console.log(text.includes('lo'))//true//
+const newArr = Array.from($list).map((list)=> list.textContent
+)
 
-//Using repeat///
+console.log('using array from', newArr)//["Monet" ,"Basquiat", "Picasso", "Modigliani"]//
 
-console.log(text.repeat(5))
