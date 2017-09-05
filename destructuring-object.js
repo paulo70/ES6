@@ -1,13 +1,8 @@
 (function() {
-  const person = {
-    name: 'karen campbel',
-    sex: 'male',
-    age: 40,
-    city: 'new york',
-    profission: 'skate'
+  function person(name='lance', surname='moutain'){
+  	console.log(`Hello ${name} ${surname} welcome`)
   }
 
-  const {name, sex, age} = person
-
-  console.log(`${name} ${sex} ${age}`)
+  person() //without pass parameter// //Hello undefined undefined welcome//
+  person() //with parameter// //Hello lance moutain welcome//
 })()
