@@ -1,13 +1,7 @@
 (function() {
-  const person = {
-    name: 'karen campbel',
-    sex: 'male',
-    age: 40,
-    city: 'new york',
-    profission: 'skate'
-  }
+  const arr = ['paul', 30, 'male', 'são paulo']
 
-  const {name, sex, age} = person
+  const [name, age, sex, city] = arr
 
-  console.log(`${name} ${sex} ${age}`)
+  console.log(`${name} ${age} ${sex} ${city}`)
 })()
