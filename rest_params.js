@@ -1,3 +1,4 @@
+// using es5
 function multiplys(multi, arg1, arg2, arg3){
   let arg = []
 
